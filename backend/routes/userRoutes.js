@@ -4,6 +4,6 @@ import { protect, adminMiddleware } from "../middlewares/authMiddleware.js";
 
 const router = express.Router();
 
-router.put("/onboard", protect, onBoardUser);
+router.patch("/onboard", protect, onBoardUser);
 
 export default router;
